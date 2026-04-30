@@ -122,75 +122,94 @@ python Rescueprogress.py
 
 ---
 
+## 🖥️ Graphical User Interface
+
 ![Main UI](screenshots/main-ui.png)
 
-The above figure shows the output after executing the commands, which is a GUI interface with all the available options.
+The above figure shows the GUI interface with all available options such as live webcam, video upload, image testing, gallery, and location settings.
 
 ---
 
-![Manual Location](screenshots/manual-location3.png)
+## 📍 Manual Location Configuration
 
-The above figure shows the functionality of setting up manual location (city, state, country, latitude, longitude), where if not set, the default IP address is used.
+![Manual Location 1](screenshots/manual-location1.png)
+![Manual Location 2](screenshots/manual-location2.png)
+![Manual Location 3](screenshots/manual-location3.png)
+
+The above figures show the manual location input feature where users can enter city, state, country, latitude, and longitude. If not provided, the system uses IP-based location detection.
 
 ---
+
+## 🧪 Image Detection
 
 ![Image Selection](screenshots/detect-image.png)
-
-Here it is shown that we can select an image from test images dataset for detection.
-
----
-
 ![Image Detection](screenshots/detect-image1.png)
 
-A number of cars and persons are detected in the above figure when a test image from the dataset is selected along with the weather info and accuracies of detection.
+The system allows selecting images from the dataset and detects humans, vehicles, and animals along with confidence scores and weather information.
 
 ---
+
+## 🎬 Video Detection
 
 ![Video Selection](screenshots/detect-video.png)
-
-Here it is shown that we can upload a video of any length from the dataset for detection.
-
----
-
 ![Video Detection](screenshots/detect-video1.png)
 
-A person is detected in the above figure when a video is uploaded where the count increases for every detection in each frame along with the weather info and accuracy of detection.
+The system processes videos frame-by-frame. Human detections increase dynamically with each frame, showing confidence scores and environmental conditions.
 
 ---
+
+## 🎥 Live Webcam Detection
+
+![Webcam 1](screenshots/webcam1.png)
+![Webcam 2](screenshots/webcam2.png)
+
+The above figures show real-time human detection using a live webcam with bounding boxes and confidence levels.
+
+---
+
+## 📂 Detection Gallery
 
 ![Gallery](screenshots/gallery.png)
 
-When we select the view gallery option, the above window is displayed where our previously detected frames are stored along with information like time, coordinates, and location of detection.
+The gallery stores detected frames along with:
+- Time  
+- Location  
+- Coordinates  
+- Detection details  
 
 ---
 
-![Console Output](screenshots/console.png)
+## 🖥️ Console Output
 
-In the above figure, output is displayed in the console along with the information about the count of persons, animals, and vehicles detected.
+![Console](screenshots/console.png)
+
+Displays real-time detection counts including:
+- Persons  
+- Animals  
+- Vehicles  
 
 ---
 
-![Live Webcam](screenshots/webcam1.png)
-
-In the above figure, a person is detected with the help of a live webcam along with the weather information and detection accuracy.
-
----
+## 📱 SMS Alert (Twilio)
 
 ![SMS Alert](screenshots/sms-alert.png)
 
-This is a screenshot of the SMS notification sent using Twilio API received on the mobile number of rescuer along with the time, date, location, coordinates, and count of persons, animals, and vehicles detected.
+SMS alerts are sent to the rescuer including:
+- Date and time  
+- Location  
+- Coordinates  
+- Detection counts  
 
 ---
+
+## 📧 Email Alerts
 
 ![Email Alert](screenshots/email-alert.png)
-
-This figure shows the content of the mail received when a person, animal, or vehicle is detected. Information like location, coordinates, count of detections, etc., is present in the content.
-
----
-
 ![Email Notifications](screenshots/email-alert1.png)
 
-This figure shows the mail notifications that we get when a person, animal or vehicle is detected.
+The above figures show email notifications received when detection occurs, including full details of location and detected objects.
+
+
 
 ---
 
