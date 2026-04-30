@@ -1,0 +1,11 @@
+# model files
+*.pt
+*.pth
+
+# folders
+runs/
+detected_frames/
+test-files/
+
+# python
+__pycache__/
